@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+</head>
+<body bgcolor="pink">
+    <form id="myForm" align="center" action="https://formspree.io/f/mwkdpezg" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="fname" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Memail"  required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="Spass" required><br><br>
+
+        <button type="submit" id="submitButton" disabled>Submit</button>
+    </form>
+
+    <script>
+        // Check if all fields are filled
+        function checkFormFields() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Enable the submit button only if all fields are filled
+            document.getElementById("submitButton").disabled = (name === '' || email === '' || password === '');
+        }
+
+        // Add event listeners for form fields
+        document.getElementById("name").addEventListener("input", checkFormFields);
+        document.getElementById("email").addEventListener("input", checkFormFields);
+        document.getElementById("password").addEventListener("input", checkFormFields);
+    </script>
+</body>
+</html>

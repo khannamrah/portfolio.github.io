@@ -1,0 +1,157 @@
+.about .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+  }
+
+  body{
+    background-color: black;
+  }
+
+  .abc{
+    color: orangered;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about .content ul strong {
+    margin-right: 10px;
+  }
+  
+  .about .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #149ddd;
+    line-height: 0;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  wrapper h1{
+    margin-top: 7rem!important;
+    font-size: 7rem;
+    font-family: 'Forum', cursive;
+    font-weight: 600;
+    color: #267d0d;
+    margin-top: 40%;
+    font-size:50px
+  }
+  .wrapper p{
+    font-size: 100;
+    text-align: center;
+    color: #000000;
+  }
+  .content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 200pxx;
+    margin-top: 30px;
+  }
+  .card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.2)
+  }
+  .card h2{
+    font-size: 170%;
+    margin-bottom: 12px;
+    font-weight: 200;
+    text-align: center;
+  }
+  .card p{
+    color: #6c757d;
+    text-align: center;
+  }
+ 
+  .card:hover p{
+    color:#fff;
+  }
+  .card:hover h2{
+    font-weight: 500;
+    color: black;
+  }
+  .card:nth-child(1):hover{
+    background:linear-gradient(45deg, rgba(233, 118, 10, 0.8) 0% ,
+                                      rgba(233, 118, 10, 0.8) 100%);
+                                     
+    background-size:cover;
+  }
+
+  .card:nth-child(2):hover{
+    background:linear-gradient(45deg, rgba(233, 118, 10, 0.8) 0% ,
+                                      rgba(233, 118, 10, 0.8) 100%);
+                                     
+    background-size:cover;
+  }
+  .card:nth-child(3):hover{
+    background:linear-gradient(45deg, rgba(233, 118, 10, 0.8) 0% ,
+                                      rgba(233, 118, 10, 0.8) 100%);
+                                     
+    background-size:cover;
+  }
+  .card:nth-child(4):hover{
+    background:linear-gradient(45deg, rgba(233, 118, 10, 0.8) 0% ,
+                                      rgba(233, 118, 10, 0.8) 100%);
+                                     
+    background-size:cover;
+  }
+  .card:nth-child(5):hover{
+    background:linear-gradient(45deg, rgba(233, 118, 10, 0.8) 0% ,
+                                      rgba(233, 118, 10, 0.8) 100%);
+                                     
+    background-size:cover;
+  }
+  .card:nth-child(6):hover{
+    background:linear-gradient(45deg, rgba(233, 118, 10, 0.8) 0% ,
+                                      rgba(233, 118, 10, 0.8) 100%);
+                                     
+    background-size:cover;
+  }
+  .card:nth-child(7):hover{
+    background:linear-gradient(45deg, rgba(12, 164, 50, 0.8) 0% ,
+                                      rgba(112, 220, 66, 0.8) 100%);
+                                     
+    background-size:cover;
+  }
+  .card:nth-child(8):hover{
+    background:linear-gradient(45deg, rgba(215, 221, 37, 0.968) 0% ,
+                                      rgba(198, 213, 39, 0.929) 100%);
+                                     
+    background-size:cover;
+  }
+
+
+  @media(max-width:991px)
+  {
+    .wrapper{
+      padding:25px;
+    }
+    .wrapper h1{
+      font-size: 2.5em;
+      font-weight: 600;
+    }
+    .content-box{
+      flex-direction: column;
+      width: 100%;
+    }

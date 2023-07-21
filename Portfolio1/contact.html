@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\Portfolio1\assests\css\form.css">
+    <style>
+        body{
+            background-image: url('https://static.vecteezy.com/system/resources/previews/010/067/594/original/yellow-gradient-fluid-abstract-background-illustration-free-vector.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h2>CONTACT</h2>
+        <!--<input type="email" id="mail" name="mail" placeholder="Enter email here">
+        <input type="text" id="msg"  name="msg" placeholder="Enter message here">
+        <button type="button" class="btnn" id="submit" disabled><a href=#>Submit</a></button>
+        <button type="submit" id="submit" disabled>Submit</button>-->
+
+<form id="myform" action="https://formspree.io/f/mvojgpyj" method="post">
+        <input type="text" id="name" name="fname" placeholder="Enter name here" required>
+        <input type="email" id="email" name="Memail" placeholder="Enter mail here" required>
+        <input type="text" id="password" name="Spass" placeholder="Enter message here" required>
+        <button type="submit" class="btnn" id="submitButton" disabled>Submit</button>
+    </form>
+       
+        <p class="link">Thank You For Visiting<br>
+        <a href="#">SOCIAL MEDIA</a> </p>
+        <p class="liw"></p>
+
+        <div class="icon">
+            <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a>
+            <a href="https://www.snapchat.com/"><ion-icon name="logo-snapchat"></ion-icon></a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <script>
+        // Check if all fields are filled
+        function checkFormFields() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Enable the submit button only if all fields are filled
+            document.getElementById("submitButton").disabled = (name === '' || email === '' || password === '');
+        }
+
+        // Add event listeners for form fields
+        document.getElementById("name").addEventListener("input", checkFormFields);
+        document.getElementById("email").addEventListener("input", checkFormFields);
+        document.getElementById("password").addEventListener("input", checkFormFields);
+    </script>
+   
+</body>
+</html>
